@@ -110,21 +110,28 @@ a {
 }
 
 .outlined {
-    --outline-color: var(--ink);
     color: white;
     text-shadow:
-        -2px -2px 0 var(--outline-color),
-        0 -2px 0 var(--outline-color),
-        2px -2px 0 var(--outline-color),
-        2px 0 0 var(--outline-color),
-        2px 2px 0 var(--outline-color),
-        0 2px 0 var(--outline-color),
-        -2px 2px 0 var(--outline-color),
-        -2px 0 0 var(--outline-color);
+        -2px -2px 0 var(--ink),
+        0 -2px 0 var(--ink),
+        2px -2px 0 var(--ink),
+        2px 0 0 var(--ink),
+        2px 2px 0 var(--ink),
+        0 2px 0 var(--ink),
+        -2px 2px 0 var(--ink),
+        -2px 0 0 var(--ink);
 }
 
 .outlined.hoverOutlined:hover {
-    --outline-color: white;
+    text-shadow:
+        -2px -2px 0 white,
+        0 -2px 0 white,
+        2px -2px 0 white,
+        2px 0 0 white,
+        2px 2px 0 white,
+        0 2px 0 white,
+        -2px 2px 0 white,
+        -2px 0 0 white;
     color: var(--ink);
     cursor: pointer;
 }
